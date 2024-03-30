@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE STAR</title>
+    <style>
+        body {
+            background-color: #fbfdff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .layout-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #C0C0C0;
+            padding: 20px;
+            color: #333;
+            
+        }
+
+        .layout-col {
+            flex: 1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .layout-col h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .layout-col p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .layout-col input[type="text"] {
+            padding: 10px;
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .layout-col button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .layout-col button:hover {
+            background-color: #e793c5;
+        }
+
+        .footer {
+            background-color: #101010;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+       
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="layout-col">
+            <h2>Để lại câu hỏi cho chúng tôi !</h2>
+            <input type="text" placeholder="Nhập câu hỏi">
+            <button type="submit">OK</button>
+        </div>
+
+        <div class="layout-col">
+            <p>Liên hệ công việc</p>
+            <p>Quy chế hoạt động</p>
+            <p>Chính sách khách hàng</p>
+            <p>Chính sách giao hàng</p>
+            <p>Chính sách đổi trả</p>
+        </div>
+
+        <div class="layout-col">
+            <p>Hướng dẫn mua hàng</p>
+            <p>Tích điểm quà tặng</p>
+            <p>Hóa đơn điện tử</p>
+            <p>Chính sách kiểm hàng</p>
+            <p>Chính sách bảo mật thông tin</p>
+        </div>
+
+        <div class="layout-col">
+            <p>Về chúng tôi</p>
+            <p>Dịch vụ</p>
+            <p>Sản phẩm</p>
+            <p>Hỏi đáp</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>MOVIE STAR</p>
+        <p>Địa chỉ: 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Hồ Chí Minh</p>
+        <p>Điện thoại: 0848154123</p>
+        <p>Email: <a href="mailto: moviestar@gmail.com">moviestar@gmail.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒNG HỒ</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #clock {
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #time {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="clock">
+        <p id="time"></p>
+    </div>
+    <script>
+        function showTime() {
+            var d = new Date();
+            var time = d.toLocaleTimeString();
+            document.getElementById("time").innerHTML = time;
+        }
+        
+        setInterval(showTime, 1000);
+    </script>
+</body>
+</html>
